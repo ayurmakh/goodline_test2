@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Roboto;
+  src: url("/Roboto-Regular.24661a2d.ttf") format("truetype");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("/Roboto-Bold.396a2bd3.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("/RobotoCondensed-Regular.50cd564a.ttf") format("truetype");
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("/RobotoCondensed-Bold.12fbfea5.ttf") format("truetype");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+section {
+  margin: 0 auto;
+}
+
+section, div {
+  border-radius: 18px;
+}
+
+.heading-section {
+  margin-top: 40px;
+  width: 960px;
+  height: 408px;
+  background: url("/bammer-gl-1.0377c8b2.png");
+  border: 1px solid #DAE0E5;
+  box-sizing: border-box;
+}
+.heading-section div {
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=/main.8f75cf09.css.map */
