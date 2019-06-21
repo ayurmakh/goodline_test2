@@ -1,0 +1,30 @@
+mixin feature(...imgs)
+    .feature
+        .shadow
+        .icons
+            if imgs.length <= 3
+                each img in imgs  
+                    img(src=img)
+            else
+                img(src=imgs[0])
+                div
+                    img(src=imgs[1])
+                    img(src=imgs[2] style="height: 74px")
+                img(src=imgs[3])
+        block 
+
+section.features
+    h1 Приобрести
+    .feature-set
+        +feature("../img/feature-cam.png")
+            p Покупка
+        +feature("../img/feature-cal.png", "../img/feature-cam.png")
+            p Рассрочка
+        +feature("../img/feature-100.png", "../img/feature-cam.png", "../img/feature-wifi.png")
+            p Пакет
+                br
+                |"Все под контролем"
+        +feature("../img/feature-100.png", "../img/feature-btv.png", "../img/feature-cam.png", "../img/feature-wifi.png")
+            p Пакет 
+                br
+                |"Тысяча пятьсот"

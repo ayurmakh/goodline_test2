@@ -1,0 +1,11 @@
+mixin cams
+    each val in [1, 2]
+        .cam-wrapper
+            .cam(id='cam' + val)
+                .shadow
+                img(src="../img/cam.png")
+            p(id='cam-more-' + val) Подробнее
+
+section.cams
+    include pop-up.pug                                
+    +cams

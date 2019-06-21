@@ -1,0 +1,97 @@
+mixin pop-up-option(img)
+    .pop-up-option
+        .pop-up-circle
+            img(src=img)
+        .pop-up-descr
+            block
+
+
+.pop-up-wrapper#pop-up-1
+    .pop-up-close
+        svg
+            <line x1="17" y1="17" x2="35" y2="35" stroke="white" stroke-width="4" stroke-linecap="round"/>
+            <line x1="17" y1="35" x2="35" y2="17" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    .pop-up
+        .shadow
+        .pop-up-container
+            +pop-up-option("../img/wire.png")
+                p Работает по
+                    br
+                    |Wi-Fi или 
+                    br
+                    |кабелю
+            +pop-up-option("../img/screen.png")
+                p Разрешение
+                    br
+                    |1280х960
+                    br
+                    |(HD)
+            +pop-up-option("../img/night.png")
+                p Ночная
+                    br
+                    |съемка
+            +pop-up-option("../img/rec.png")
+                p Запись звука
+                    br
+                    |и видео
+            +pop-up-option("../img/angle.png")
+                p Угол обзора
+                    br
+                    |100°
+            +pop-up-option("../img/wire.png")
+                p Длина
+                    br
+                    |кабеля
+                    br
+                    |1.5 метра
+
+.pop-up-wrapper#pop-up-2
+    .pop-up
+        .shadow
+        .pop-up-container
+            +pop-up-option("../img/foot.png")
+                p Уведомление
+                    br
+                    |на телефон
+                    br
+                    |о движении
+            +pop-up-option("../img/store.png")
+                p Хранение
+                    br
+                    |данных на
+                    br
+                    |защищенных 
+                    br
+                    |серверах
+            +pop-up-option("../img/access.png")
+                p Совместный 
+                    br
+                    |доступ
+                    br
+                    |у членов
+                    br
+                    |семьи
+            +pop-up-option("../img/phone.png")
+                p Скачивание/
+                    br
+                    |удаление
+                    br
+                    |архивных
+                    br
+                    |записей
+            +pop-up-option("../img/geo.png")
+                p Доступ
+                    br
+                    |из любой
+                    br
+                    |точки мира
+            +pop-up-option("../img/bell.png")
+                p Уведомление
+                    br
+                    |о приходе
+                    br
+                    |«Домашних» 
+    .pop-up-close
+        svg
+            line(x1="17", y1="17", x2="35", y2="35", stroke="white", stroke-width="4", stroke-linecap="round")
+            line(x1="17", y1="35", x2="35", y2="17", stroke="white", stroke-width="4", stroke-linecap="round")

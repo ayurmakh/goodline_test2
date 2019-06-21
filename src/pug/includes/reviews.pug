@@ -1,0 +1,31 @@
+mixin slide(h3, img, num, hidden)
+    .slide(id='slide-' + num, class=hidden)
+        .photo
+            svg
+                circle(cx="71", cy="71", r="51", stroke="rgba(255, 255, 255, 0.25)", stroke-width="1", fill="none")
+                circle(cx="71", cy="71", r="47", stroke="rgba(255, 255, 255, 0.5)", stroke-width="1", fill="none")
+                circle(cx="71", cy="71", r="43", stroke="white", stroke-width="1", fill="none")
+            img(src=img)
+        .info
+            h3=h3
+            block
+        .arrow-down
+            svg
+                line(x1="5", y1="7", x2="12", y2="14", stroke="white", stroke-width="4", stroke-linecap="round")
+                line(x1="19", y1="7", x2="12", y2="14", stroke="white", stroke-width="4", stroke-linecap="round")
+
+section.reviews
+    h1 Отзывы
+    .slider
+        +slide("Алексей Гоно", "../img/photo.png", 1, 'hidden-slide')
+            p Отличное и удобное приложение.
+                br
+                |Классные возможности, отзывчивая
+                br
+                |поддержка.
+        +slide("Гоно Алексей", "../img/photo.png", 2, '')
+            p Отличное и удобное приложение.
+                br
+                |Классные возможности, отзывчивая
+                br
+                |поддержка.

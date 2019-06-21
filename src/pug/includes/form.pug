@@ -1,0 +1,19 @@
+section.form-section
+    .shadow
+    .form
+        h2 Оставьте заявку, и мы позвоним вам
+            br
+            |в ближайшее время
+        input.phone(type="text")
+        .error-container.hidden-display
+            .attention !
+            span.error Проверьте набранный номер
+        p.contact Контактный телефон
+        button.button#send-button Отправить заявку
+            img(src="../img/ic-send.png")
+    .form-sended.hidden-display
+        h2 Спасибо, что оставили заявку. 
+            br
+            |Мы скоро вам перезвоним.
+        button.button.button-sended Отправить заявку 
+            img(src="../img/ic-send.png")
